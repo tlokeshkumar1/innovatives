@@ -1,5 +1,5 @@
 import openai
-openai.api_key="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"
+openai.api_key="api key"
 while True:
     model_engine="text-davinci-003"
     prompt=input('Enter new prompt: ')

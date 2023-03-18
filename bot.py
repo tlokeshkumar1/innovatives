@@ -5,7 +5,7 @@ secrets = openai_secret_manager.get_secret("openai")
 
 import openai
 
-openai.api_key = secrets["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"]
+openai.api_key = secrets["api key"]
 
 def generate_response(prompt):
     response = openai.Completion.create(
