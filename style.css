@@ -1,0 +1,45 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+  }
+  body {
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      display: flex;
+      background: #000;
+  }
+  .box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .box h2{
+    font-size: 15vw;
+    color: transparent;
+    -webkit-text-stroke: 1px #f00;
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    animation: animate 2.5s linear infinite;
+    animation-delay: calc(var(--i)*0.25s);
+    
+  }
+  @keyframes animate{
+    0%, 10%{
+      color: #f00;
+      filter: hue-rotate(0deg);
+    }
+    10.0000001%{
+      color: transparent;
+    }
+    100%{
+      color: transparent;
+      filter: hue-rotate(320deg);
+      }
+  }

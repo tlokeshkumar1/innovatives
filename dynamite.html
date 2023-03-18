@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="box">
+    <h2 style="--i:0;">Dynamite</h2>
+    <h2 style="--i:1;">Dynamite</h2>
+    <h2 style="--i:2;">Dynamite</h2>
+    <h2 style="--i:3;">Dynamite</h2>
+    <h2 style="--i:4;">Dynamite</h2>
+    <h2 style="--i:5;">Dynamite</h2>
+    <h2 style="--i:6;">Dynamite</h2>
+    <h2 style="--i:7;">Dynamite</h2>
+    <h2 style="--i:8;">Dynamite</h2>
+    <h2 style="--i:9;">Dynamite</h2>
+
+  </div>
+  <!-- Project -->
+  <script>
+      window.addEventListener("mouseover",play);
+window.addEventListener("click",play);
+function play(){ 
+document.getElementById("a").play();
+      }
+      
+Swal.fire("Click anywhere to play the music 🎶🎶");
+  </script>
+  <audio class="audio" id ="a">
+<source src="https://dl.dropboxusercontent.com/s/mxyjb866jjf1x4t/_Dynamite%28PagalWorld.com.pe%29.mp3" >
+</audio>
+</body>
+</html>
